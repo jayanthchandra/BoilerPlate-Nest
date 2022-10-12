@@ -1,10 +1,4 @@
-/**
- * HttpCache interceptor.
- * @file 缓存拦截器
- * @module interceptor/cache
- * @author Surmon <https://github.com/surmon-china>
- * @author Innei <https://innei.ren>
- */
+
 import { Observable } from 'rxjs'
 import { of } from 'rxjs'
 import { tap } from 'rxjs/operators'

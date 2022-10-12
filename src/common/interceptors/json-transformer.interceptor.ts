@@ -1,7 +1,4 @@
-/**
- * 对响应体进行 JSON 标准的转换
- * @author Innei
- */
+
 import { isArrayLike, isObjectLike } from 'lodash'
 import { Observable, map } from 'rxjs'
 import snakecaseKeys from 'snakecase-keys'
@@ -21,7 +18,6 @@ export class JSONTransformerInterceptor implements NestInterceptor {
   constructor(private readonly reflector: Reflector) {}
   intercept(context: ExecutionContext, next: CallHandler): Observable<any> {
     const handler = context.getHandler()
-    // 跳过 bypass 装饰的请求
     const bypass = this.reflector.get<boolean>(
       RESPONSE_PASSTHROUGH_METADATA,
       handler,
