@@ -1,4 +1,5 @@
 /* eslint-disable prefer-rest-params */
+// This is for pretty console logs - Not required usually
 import consola_, { FancyReporter, LogLevel } from 'consola'
 import { CronJob } from 'cron'
 import { createWriteStream } from 'fs'
