@@ -7,14 +7,7 @@ console.log(argv)
 export const PORT = argv.port || 3333
 export const CROSS_DOMAIN = {
   allowedOrigins: [
-    'innei.ren',
-    'shizuri.net',
-    'localhost:9528',
-    'localhost:2323',
-    '127.0.0.1',
-    'mbp.cc',
-    'local.innei.test',
-    '22333322.xyz',
+    'X'
   ],
   allowedReferer: 'innei.ren',
 }
